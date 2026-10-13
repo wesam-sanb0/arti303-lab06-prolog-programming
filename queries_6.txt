@@ -1,0 +1,98 @@
+------ Task 1: can_buy/2 (budget + colour) ------
+
+74 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/cars2.pl').
+true.
+
+75 ?- can_buy(100000).
+With 90000 you can purchase the car ford
+true .
+
+76 ?- can_buy(100000, red).
+With 80000 you can purchase the car datsun (colour: red)
+true .
+
+77 ?- can_buy(100000, blue).
+With 80000 you can purchase the truck ford (colour: blue)
+true.
+
+78 ?- can_buy(100000, green).
+false.
+
+------ Task 2: games.pl menu ------
+
+
+79 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/games2.pl').
+true.
+
+80 ?- menu.
+
+Welcome to the Prolog Game Selection
+
+Please choose any number
+--------------------------
+1 - to choose running games
+2 - to choose non-running games
+3 - to exit
+
+-->> Enter option: 1.
+
+Welcome to Running Games
+-------------------------
+1 - to choose to play with bat
+2 - to choose to play with racket
+3 - to choose to play with bare hands
+4 - to choose to play with gloves
+-->> Enter option: |: 4.
+
+--( You want to play Baseball )--
+Do you want to go back to the main menu (yes/no)? |: no.
+
+===< End >===
+true .
+
+81 ?- 2.
+ERROR: Type error: `callable' expected, found `2' (an integer)
+ERROR: In:
+ERROR:   [13] toplevel_call(user:user:2)
+82 ?- manu
+|    
+|    .
+Correct to: "menu"? 
+Please answer 'y' or 'n'? yes
+
+Welcome to the Prolog Game Selection
+
+Please choose any number
+--------------------------
+1 - to choose running games
+2 - to choose non-running games
+3 - to exit
+
+-->> Enter option: 2.
+
+Welcome to Non-Running Games
+--------------------------
+1 - to choose to play individual
+2 - to choose to play in a group
+3 - to choose to play with a partner
+
+-->> Enter option: |: 2.
+
+--<< You want to play Volleyball >>--
+
+
+Do you want to go back to the main menu (yes/no)? |: yes.
+
+Welcome to the Prolog Game Selection
+
+Please choose any number
+--------------------------
+1 - to choose running games
+2 - to choose non-running games
+3 - to exit
+
+-->> Enter option: |: 3.
+
+===< End >===
+true .
+
